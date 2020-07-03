@@ -8,9 +8,9 @@ SWIFT_LINT=/usr/local/bin/swiftlint
 # Run SwiftLint for given filename
 exec_swiftlint() {
     local filename="${1}"
-    print("File is: ${filename}")
+    echo "File is: ${filename}"
         if [[ "${filename##*.}" == "swift" ]]; then
-            if [[ "${filename}" != "AutoMockable"]]; then
+            if [[ "${filename}" != "AutoMockable" ]]; then
             ${SWIFT_LINT} autocorrect --path "${filename}"
             ${SWIFT_LINT} lint --path "${filename}"
             fi
