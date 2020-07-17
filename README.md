@@ -1,5 +1,5 @@
 # Pre-Hook-Swiftlint-Autocorrect
-Evaluates and corrects swift files using SwiftLint after commit through a git pre-commit hook
+Evaluates and aucorrects swift files using SwiftLint through a git pre-commit hook
 
 
 # How
